@@ -7,7 +7,9 @@
  The  Nonlinear Image Restoration is as follows:
 
  We are solving:
+
                       min_x ||b-s(Kx)||^2 + μ||x||^2
+                      
  where
 
  s(x) = 30log(x),
@@ -23,5 +25,5 @@
  μ is the regularizer.
 
  Considering the implicit constraint  x > 0 we construct the Lagrangian as:
- 
+
                       L(x,w) = ||b-s(Kx)||^2 + μ||x||^2 + w'x
